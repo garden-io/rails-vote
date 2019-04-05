@@ -1,0 +1,15 @@
+kind: Module
+description: Postgres container for storing voting results
+type: container
+name: postgres
+image: postgres:9.4
+Services:
+  - name: postgres
+    volumes: # A persistent volume for the data.
+      - name: data
+        containerPath: /db-data
+    ports:  # Expose the default Postgres port
+      - name: db
+        containerPort: 5432
+    healthCheck: 
+      command: [ psql, -w, -U, postgres, -d, postgres, -c, "SELECT 1" ]
