@@ -3,7 +3,7 @@ description: Postgres container for storing voting results
 type: container
 name: postgres
 image: postgres:9.4
-Services:
+services:
   - name: postgres
     volumes: # A persistent volume for the data.
       - name: data
