@@ -19,6 +19,6 @@ services:
       - db-migrate
 tasks:
   - name: db-migrate
-    args: [rake db:migrate]
+    args: [rake, db:migrate]
     dependencies:
       - postgres
