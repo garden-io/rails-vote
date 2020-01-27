@@ -13,7 +13,7 @@
 
 # Voting example project with Ruby on Rails and Kubernetes
 
-This is a minimal Ruby on Rails project consisting of a single containerized Rails service and a Postgres database (a separate service), [written to accompany this blog post on Medium](https://medium.com/p/8c6a866ebe18/edit).
+This is a minimal Ruby on Rails project consisting of a single containerized Rails service and a Postgres database (a separate service), [written to accompany this blog post on Medium](https://medium.com/p/8c6a866ebe18).
 
 ## Setup
 
